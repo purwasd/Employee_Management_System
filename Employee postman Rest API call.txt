@@ -1,0 +1,60 @@
+*************** Rest API call list for Employee crud operations ***************
+
+1) Add Employee
+URL = "localhost:8080/addEmployee"
+Request method = "POST"
+Json Body
+{
+	
+	"firstName": "Simran",
+	"lastName": "Shah",
+	"email": "simi.shah@gmail.com",
+	"mob": "9063245566",
+	"addressRequest": {
+		"streetAddress": "Mumbai street",
+		"city": "Mumbai",
+		"state": "Maharashtra",
+		"country": "India",
+		"pin": "461257"
+	}
+}
+
+
+
+2) Update Employee
+URL = "localhost:8080/updateEmployee"
+Request method = "PUT"
+Json Body
+{
+	
+	"id" : 1,
+	"firstName": "Alen",
+	"lastName": "Smith",
+	"email": "john.smith@gmail.com",
+	"mob": "5655566655566",
+	"addressRequest": {
+		"streetAddress": "London street",
+		"city": "London",
+		"state": "London",
+		"country": "England",
+		"pin": "123456"
+	}
+}
+
+
+
+3) Delete Employee
+URL = "localhost:8080/deleteEmployee/3"
+Request method = "DELETE"
+
+
+
+4) Fetch all employee
+URL = "localhost:8080/fetchAllEmployee"
+Request method = "GET"
+
+
+
+4) Fetch employee by Id
+URL = "localhost:8080/fetchEmployee/2"
+Request method = "GET"

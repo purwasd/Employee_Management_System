@@ -1,0 +1,117 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Employee_Management_System",
+		"_postman_id": "b81ba15c-2246-a2c6-3043-1aad5c7769b3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "EmployeeCrudOperation",
+			"description": "",
+			"item": [
+				{
+					"name": "localhost:8080/addEmployee",
+					"request": {
+						"url": "localhost:8080/addEmployee",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\n\t\"firstName\": \"Simran\",\n\t\"lastName\": \"Shah\",\n\t\"email\": \"simi.shah@gmail.com\",\n\t\"mob\": \"9063245566\",\n\t\"addressRequest\": {\n\t\t\"streetAddress\": \"Mumbai street\",\n\t\t\"city\": \"Mumbai\",\n\t\t\"state\": \"Maharashtra\",\n\t\t\"country\": \"India\",\n\t\t\"pin\": \"461257\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/updateEmployee",
+					"request": {
+						"url": "localhost:8080/updateEmployee",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\n\t\"id\" : 1,\n\t\"firstName\": \"Alen\",\n\t\"lastName\": \"Smith\",\n\t\"email\": \"john.smith@gmail.com\",\n\t\"mob\": \"5655566655566\",\n\t\"addressRequest\": {\n\t\t\"streetAddress\": \"London street\",\n\t\t\"city\": \"London\",\n\t\t\"state\": \"London\",\n\t\t\"country\": \"England\",\n\t\t\"pin\": \"123456\"\n\t}\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/deleteEmployee/3",
+					"request": {
+						"url": "localhost:8080/deleteEmployee/4",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/fetchEmployee/1",
+					"request": {
+						"url": "localhost:8080/fetchEmployee/2",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"fullName\": \"Pratik Mhatre\",\n\t\"age\" : 26,\n\t\"email\" : \"abcd@123\",\n\t\"mob\" : 1234567\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/fetchAllEmployee",
+					"request": {
+						"url": "localhost:8080/fetchAllEmployee",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\" : 4,\n\t\"firstName\" : \"Alen\",\n\t\"lastName\" : \"Watson\",\n\t\"email\" : \"abcd@1234\",\n\t\"mob\" : 1234565799,\n\t\"address\" : \"abdc\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
